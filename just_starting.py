@@ -10,13 +10,13 @@ def main():
     PATH="C:\Program Files (x86)\chromedriver.exe"
 
 
-    options = webdriver.ChromeOptions()
-    options.add_argument("--start-maximized")
+    # options = webdriver.ChromeOptions()
+    # options.add_argument("--start-maximized")
 
-    driver = webdriver.Chrome(PATH, chrome_options=options)
+    driver = webdriver.Chrome(PATH)
     #driver  = webdriver.Chrome(PATH)
 
-    driver.implicitly_wait(10)
+    driver.maximize_window()
 
     driver.get("https://www.bigbasket.com/cl/fruits-vegetables/")
 
